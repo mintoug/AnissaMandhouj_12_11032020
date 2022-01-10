@@ -1,0 +1,26 @@
+.mainNavBar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8rem;
+    margin-right: 4rem;
+    width: 100%;
+}
+.LinkAccueil,
+.reglages,
+.profil,
+.communaute{
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    transition: all ease-in .8ms;
+}
+.LinkAccueil:hover,
+.reglages:hover,
+.profil:hover,
+.communaute:hover{
+    color: #e60000;
+    transform: scale(1.05);
+}
