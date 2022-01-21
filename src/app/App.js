@@ -1,10 +1,8 @@
 import Header from "../components/Header/Header";
 import React, { Component } from 'react'
 import  {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Api from "../services/api/Api";
 import Verticalbar from "../components/VerticalBar/Verticalbar";
-import Welcome from "../components/Welcome/Welcome";
-
+import Sharts from "../containers/Charts/Charts"
 export default class App extends Component {
   render() {
     return (
@@ -12,9 +10,9 @@ export default class App extends Component {
         <Switch> 
             <Route exact path='/' >
             <Header />
-            <Welcome />
+            <Sharts />
             <Verticalbar />
-           <Api />
+           
             </Route>
         </Switch>
       </Router>
