@@ -2,6 +2,7 @@ import ApiProvider from '../../services/ApiProvider';
 import React, { Component } from 'react';
 import Welcome from '../../components/Welcome/Welcome';
 import DailyActivity from '../../containers/DailyActivity/Dailyactivity';
+import GoalScore from '../../containers/GoalScore/Goalscore';
 import PropTypes from 'prop-types';class Charts extends Component {
     constructor(props) {
         super(props)
@@ -44,6 +45,10 @@ import PropTypes from 'prop-types';class Charts extends Component {
             <section className="charts">
                 <Welcome welcomeData={this.state.welcomeData} />
                 <DailyActivity id={this.state.id} />
+                <GoalScore 
+                    goalScoreData={this.state.goalScoreData} 
+                    goalScorePercentage={this.state.goalScorePercentage} 
+                />
             </section>
         )
     }}
@@ -51,5 +56,7 @@ import PropTypes from 'prop-types';class Charts extends Component {
         id : PropTypes.string.isRequired,
     }
     
+
+
     export default Charts;
 

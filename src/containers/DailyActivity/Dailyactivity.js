@@ -5,6 +5,7 @@ import '../DailyActivity/Dailyactivity.css';
 
 import React, {Component} from 'react';
 
+
 class DailyActivity extends Component {
     constructor(props) {
         super(props)
@@ -45,7 +46,7 @@ class DailyActivity extends Component {
                 minimumYaxisKcal = {this.state.minimumYaxisKcal}
                 maximumYaxisKcal = {this.state.maximumYaxisKcal}
                 />
-            </section>
+                </section>
         
     }
 
