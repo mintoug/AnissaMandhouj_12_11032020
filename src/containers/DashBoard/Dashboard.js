@@ -6,7 +6,7 @@ import React, {Component, Fragment} from 'react';
 import Verticalbar from '../../components/VerticalBar/Verticalbar';
 
 
-class DashBoard extends Component {
+class Dashboard extends Component {
     state = {
         id : this.props.id,
     }
@@ -24,8 +24,8 @@ class DashBoard extends Component {
     }
 }
 
-DashBoard.propTypes = {
+Dashboard.propTypes = {
     id : PropTypes.string.isRequired,
 }
 
-export default DashBoard;
+export default Dashboard;

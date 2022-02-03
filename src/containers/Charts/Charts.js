@@ -1,14 +1,26 @@
 import ApiProvider from '../../services/ApiProvider';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+// ASSETS 
+import calories from '../../assets/aliments/energy.png';
+import protein from '../../assets/aliments/chicken.png';
+import carbohydrates from '../../assets/aliments/apple.png';
+import lipids from '../../assets/aliments/cheeseburger.png';
+// CHARTS
 import Welcome from '../../components/Welcome/Welcome';
-import DailyActivity from '../../containers/DailyActivity/Dailyactivity';
-import GoalScore from '../../containers/GoalScore/Goalscore';
-import PropTypes from 'prop-types';class Charts extends Component {
+import DailyActivity from '../DailyActivity/Dailyactivity';
+import SessionsAverage from '../SessionsAverage/Sessionaverage';
+import PerformanceAverage from '../PerformanceAverage/Performanceaverage';
+import GoalScore from '../GoalScore/Goalscore';
+import MacroTracker from '../../components/Macrotracker/Macrotracker';
+import ErrorModal from '../../components/ErrorModal/ErrorModal';
+
+class Charts extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            id : 18,
+            id : this.props.id,
             welcomeData : null,
             goalScoreData : [],
             goalScorePercentage : 0,
@@ -41,22 +53,73 @@ import PropTypes from 'prop-types';class Charts extends Component {
     }
 
     render () {
-        return (
+        return this.state.errorModal ? 
+        (
+            <ErrorModal message={this.state.message} />
+        )
+        : (
             <section className="charts">
                 <Welcome welcomeData={this.state.welcomeData} />
                 <DailyActivity id={this.state.id} />
+                {this.getHorizontalSectionCharts()}
+                {this.getMacroTrackerSideSection()}
+            </section>
+        )
+    }
+
+    // Build the main Section Charts with UserAverageChart, PerformanceAverageChart and GoalScoreChart
+    getHorizontalSectionCharts = () => {
+        return (
+            <section className="chartsHorizontal">
+                <SessionsAverage id={this.state.id} />
+                <PerformanceAverage id={this.state.id} />
                 <GoalScore 
                     goalScoreData={this.state.goalScoreData} 
                     goalScorePercentage={this.state.goalScorePercentage} 
                 />
             </section>
         )
-    }}
-    Charts.propTypes = {
-        id : PropTypes.string.isRequired,
     }
-    
 
+    // Build the side section that contains the MacroTrackers
+    getMacroTrackerSideSection = () => {
+        return (
+            <section className="chartsVertical">
+                {/* CALORIES */}
+                <MacroTracker 
+                    data={this.state.macroTrackerData.calorieCount / 1000}
+                    icon={calories} 
+                    unitOfMeasure="kCal" 
+                    name="Calories"
+                />
+                {/* PROTEIN */}
+                <MacroTracker 
+                    data={this.state.macroTrackerData.proteinCount}
+                    icon={protein} 
+                    unitOfMeasure="g" 
+                    name="Protéines"
+                /> 
+                {/* CARBOHYDRATES */}
+                <MacroTracker 
+                    data={this.state.macroTrackerData.carbohydrateCount}
+                    icon={carbohydrates} 
+                    unitOfMeasure="g" 
+                    name="Glucides"
+                />
+                {/* LIPIDS */}
+                <MacroTracker 
+                    data={this.state.macroTrackerData.lipidCount}
+                    icon={lipids} 
+                    unitOfMeasure="g" 
+                    name="Lipides"
+                />
+            </section>
+        )
+    }
+}
 
-    export default Charts;
+Charts.propTypes = {
+    id : PropTypes.string.isRequired,
+}
 
+export default Charts;

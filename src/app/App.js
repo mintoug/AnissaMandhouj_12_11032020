@@ -1,18 +1,22 @@
-import React, { Component, lazy } from 'react'
-import  {BrowserRouter as Router,Redirect, Switch, Route } from 'react-router-dom'
+import '../app/App.css';
+import { BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
+import Dashboard from '../containers/DashBoard/Dashboard';
+import React, {Component, lazy, Suspense} from 'react';
 import {routes} from '../routes/routes';
-import Dashboard from "../containers/DashBoard/Dashboard";
 
-export default class App extends Component {
+class App extends Component {
   render() {
+    const Loading = () => <h1>Loading...</h1>
+
     const component = (component) => {
       return lazy(() => import(`../components/${component}/${component}`))
     }
+
     return (
-      
-      <Router>
-        <Switch> 
-        {routes.map((route, index) => {
+      <Suspense fallback={<Loading />}>
+        <Router>
+          <Switch>
+            {routes.map((route, index) => {
               if (route.path !== '*') {
                 if (route.path === '/') {
                   return (
@@ -25,7 +29,6 @@ export default class App extends Component {
                     <Route key={index} exact path={route.path} render= {({ match }) => (
                       ( 
                         <Dashboard id={match.params.id}/> 
-                        
                       )
                     )}/>
                   )
@@ -34,9 +37,11 @@ export default class App extends Component {
                 return <Route key={index} path={route.path} component={component(route.component)} />
               }
             })}
-        </Switch>
-      </Router>
+          </Switch>
+        </Router>
+      </Suspense>
     )
   }
 }
 
+export default App;

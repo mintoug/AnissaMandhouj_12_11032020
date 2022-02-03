@@ -3,7 +3,7 @@ import CustomTooltipDailyActivity from '../../../components/AllCharts/CustumTool
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
-class ChartBar extends Component {
+class Barchart extends Component {
     // Build Bar Chart
     render() {
         return (
@@ -70,7 +70,7 @@ class ChartBar extends Component {
     }
 }
 
-ChartBar.propTypes = {
+Barchart.propTypes = {
     dailyActivityData : PropTypes.array.isRequired,
     mininumYaxisKg : PropTypes.number.isRequired,
     maximumYaxisKg : PropTypes.number.isRequired,
@@ -78,4 +78,4 @@ ChartBar.propTypes = {
     maximumYaxisKcal : PropTypes.number.isRequired,
 }
 
-export default ChartBar;
+export default Barchart;
