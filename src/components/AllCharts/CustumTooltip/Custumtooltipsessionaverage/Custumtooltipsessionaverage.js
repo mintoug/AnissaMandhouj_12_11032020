@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 import '../Custumtooltipsessionaverage/Custumtooltipsessionaverage.css';
 
-class Customtooltipsessionaverage extends Component {
+class Custumtooltipsessionaverage extends Component {
     render() {
         const { payload, active } = this.props;
 
@@ -14,10 +14,10 @@ class Customtooltipsessionaverage extends Component {
     }
 }
 
-Customtooltipsessionaverage.propTypes = {
+Custumtooltipsessionaverage.propTypes = {
     active: PropTypes.bool,
     payload: PropTypes.array,
 };
 
-export default Customtooltipsessionaverage;
+export default Custumtooltipsessionaverage;
 

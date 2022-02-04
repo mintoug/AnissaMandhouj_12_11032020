@@ -1,7 +1,9 @@
-# Getting Started with Create React App
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# an analytic dashboard for SportSee with React
+# We need to have 
+- You need [Git](https://git-scm.com) to clone the repository
+- You need [Node](https://nodejs.org/en/) (v16.7.0) to run the npm commands
 ## Available Scripts
 
 In the project directory, you can run:
