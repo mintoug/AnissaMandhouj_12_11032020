@@ -1,9 +1,5 @@
 class ApiFormatter {
-    /**
-     * Retrieve dataAPI USER_MAIN_DATA and return the data formatted, ready to be used for the component
-     * @param {Object} dataApi - Data from the API SportSee
-     * @return {Object} - Formatted data for the component
-     */
+    
     static getMainDataFormat(dataApi) {
         let fetchedData = dataApi.data.data;
 
@@ -14,10 +10,7 @@ class ApiFormatter {
         }
     }
 
-    /**
-     * Build an array with the dates of the 7 previous days.
-     * @return {Object} - Formatted default data for the component
-     */
+    
     static getDailyActivityDataFormatDefault() {
         const data = [];
         let date = new Date(Date.now());
@@ -44,9 +37,6 @@ class ApiFormatter {
     }
 
     /**
-     * Retrieve dataAPI USER_ACTIVITY and return the data formatted, ready to be used for the component
-     * @param {Object} dataApi - Data from the API SportSee
-     * @return {Object} - Formatted data for the component
      */
     static getDailyActivityDataFormat(dataApi) {
         if (dataApi) {
@@ -75,11 +65,7 @@ class ApiFormatter {
         this.getDailyActivityDataFormatDefault();
     }
 
-    /**
-     * Retrieve dataAPI USER_AVERAGE_SESSIONS and return the data formatted, ready to be used for the component
-     * @param {Object} dataApi - Data from the API SportSee
-     * @return {Object} - Formatted data for the component
-     */
+   
     static getUserAverageDataFormat(dataApi) {
         let fetchedData = dataApi.data.data;
         const sessionsData = [];
@@ -95,11 +81,7 @@ class ApiFormatter {
         return sessionsData;
     }
 
-    /**
-     * Retrieve dataAPI USER_PERFORMANCE and return the data formatted, ready to be used for the component
-     * @param {Object} dataApi - Data from the API SportSee
-     * @return {Object} - Formatted data for the component
-     */
+    
     static getPerformanceAverageDataFormat(dataApi) {
         let fetchedData = dataApi.data.data.data;
         let performanceAverageData = [];
