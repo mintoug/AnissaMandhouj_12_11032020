@@ -1,72 +1,43 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-
+[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzIuODM5OTk5OTk5OTk5OTciIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxNzIuODM5OTk5OTk5OTk5OTcgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSI2NC44NSIgaGVpZ2h0PSIzNSIgZmlsbD0iIzMxQzRGMyIvPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjYyLjg0OTk5OTk5OTk5OTk5NCIgeT0iMCIgd2lkdGg9IjEwOS45OSIgaGVpZ2h0PSIzNSIgZmlsbD0iIzM4OUFENSIvPjxwYXRoIGNsYXNzPSJzdmdfX3RleHQiIGQ9Ik0xNS42MCAyMkwxMy42MyAxMy40N0wxNS4xMCAxMy40N0wxNi40MyAxOS44OEwxOC4wNiAxMy40N0wxOS4zMCAxMy40N0wyMC45MSAxOS44OUwyMi4yMiAxMy40N0wyMy42OSAxMy40N0wyMS43MiAyMkwyMC4zMSAyMkwxOC42OCAxNS43N0wxNy4wMiAyMkwxNS42MCAyMlpNMjkuMzMgMjJMMjcuODUgMjJMMjcuODUgMTMuNDdMMjkuMzMgMTMuNDdMMjkuMzMgMjJaTTM1LjgyIDE0LjY2TDMzLjE4IDE0LjY2TDMzLjE4IDEzLjQ3TDM5Ljk1IDEzLjQ3TDM5Ljk1IDE0LjY2TDM3LjI5IDE0LjY2TDM3LjI5IDIyTDM1LjgyIDIyTDM1LjgyIDE0LjY2Wk00NS4xOSAyMkw0My43MSAyMkw0My43MSAxMy40N0w0NS4xOSAxMy40N0w0NS4xOSAxNy4wMkw0OS4wMCAxNy4wMkw0OS4wMCAxMy40N0w1MC40OCAxMy40N0w1MC40OCAyMkw0OS4wMCAyMkw0OS4wMCAxOC4yMUw0NS4xOSAxOC4yMUw0NS4xOSAyMloiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNNzkuNDIgMjJMNzcuMDQgMjJMNzcuMDQgMTMuNjBMODAuODggMTMuNjBRODIuMDIgMTMuNjAgODIuODYgMTMuOThRODMuNzAgMTQuMzUgODQuMTYgMTUuMDZRODQuNjEgMTUuNzYgODQuNjEgMTYuNzFMODQuNjEgMTYuNzFRODQuNjEgMTcuNjIgODQuMTkgMTguMzBRODMuNzYgMTguOTggODIuOTcgMTkuMzZMODIuOTcgMTkuMzZMODQuNzggMjJMODIuMjQgMjJMODAuNzEgMTkuNzdMNzkuNDIgMTkuNzdMNzkuNDIgMjJaTTc5LjQyIDE1LjQ3TDc5LjQyIDE3LjkzTDgwLjc0IDE3LjkzUTgxLjQ3IDE3LjkzIDgxLjg0IDE3LjYxUTgyLjIxIDE3LjI5IDgyLjIxIDE2LjcxTDgyLjIxIDE2LjcxUTgyLjIxIDE2LjEyIDgxLjg0IDE1Ljc5UTgxLjQ3IDE1LjQ3IDgwLjc0IDE1LjQ3TDgwLjc0IDE1LjQ3TDc5LjQyIDE1LjQ3Wk05Ni4xNSAyMkw4OS40MCAyMkw4OS40MCAxMy42MEw5NS45OSAxMy42MEw5NS45OSAxNS40NEw5MS43NiAxNS40NEw5MS43NiAxNi44NUw5NS40OSAxNi44NUw5NS40OSAxOC42M0w5MS43NiAxOC42M0w5MS43NiAyMC4xN0w5Ni4xNSAyMC4xN0w5Ni4xNSAyMlpNMTAyLjM3IDIyTDk5Ljk0IDIyTDEwMy42NSAxMy42MEwxMDUuOTkgMTMuNjBMMTA5LjcxIDIyTDEwNy4yNCAyMkwxMDYuNTggMjAuMzdMMTAzLjAzIDIwLjM3TDEwMi4zNyAyMlpNMTA0LjgxIDE1LjkzTDEwMy43MiAxOC42MUwxMDUuODggMTguNjFMMTA0LjgxIDE1LjkzWk0xMTMuNDQgMTcuODBMMTEzLjQ0IDE3LjgwUTExMy40NCAxNi41NCAxMTQuMDMgMTUuNTRRMTE0LjYzIDE0LjU1IDExNS42OCAxMy45OVExMTYuNzQgMTMuNDMgMTE4LjA1IDEzLjQzTDExOC4wNSAxMy40M1ExMTkuMjEgMTMuNDMgMTIwLjEzIDEzLjg0UTEyMS4wNSAxNC4yNSAxMjEuNjcgMTUuMDJMMTIxLjY3IDE1LjAyTDEyMC4xNiAxNi4zOVExMTkuMzQgMTUuNDAgMTE4LjE4IDE1LjQwTDExOC4xOCAxNS40MFExMTcuNDkgMTUuNDAgMTE2Ljk2IDE1LjcwUTExNi40MiAxNiAxMTYuMTMgMTYuNTRRMTE1LjgzIDE3LjA5IDExNS44MyAxNy44MEwxMTUuODMgMTcuODBRMTE1LjgzIDE4LjUxIDExNi4xMyAxOS4wNVExMTYuNDIgMTkuNjAgMTE2Ljk2IDE5LjkwUTExNy40OSAyMC4yMCAxMTguMTggMjAuMjBMMTE4LjE4IDIwLjIwUTExOS4zNCAyMC4yMCAxMjAuMTYgMTkuMjJMMTIwLjE2IDE5LjIyTDEyMS42NyAyMC41OFExMjEuMDYgMjEuMzUgMTIwLjEzIDIxLjc2UTExOS4yMSAyMi4xNyAxMTguMDUgMjIuMTdMMTE4LjA1IDIyLjE3UTExNi43NCAyMi4xNyAxMTUuNjggMjEuNjFRMTE0LjYzIDIxLjA1IDExNC4wMyAyMC4wNVExMTMuNDQgMTkuMDYgMTEzLjQ0IDE3LjgwWk0xMjguMDAgMTUuNDhMMTI1LjQxIDE1LjQ4TDEyNS40MSAxMy42MEwxMzIuOTQgMTMuNjBMMTMyLjk0IDE1LjQ4TDEzMC4zNyAxNS40OEwxMzAuMzcgMjJMMTI4LjAwIDIyTDEyOC4wMCAxNS40OFpNMTM2Ljc5IDIwLjc1TDEzNi43OSAyMC43NVExMzYuNzkgMjAuMTUgMTM3LjE4IDE5Ljc4UTEzNy41NyAxOS40MSAxMzguMTYgMTkuNDFMMTM4LjE2IDE5LjQxUTEzOC43NiAxOS40MSAxMzkuMTQgMTkuNzhRMTM5LjUzIDIwLjE1IDEzOS41MyAyMC43NUwxMzkuNTMgMjAuNzVRMTM5LjUzIDIxLjM0IDEzOS4xNCAyMS43MlExMzguNzUgMjIuMTEgMTM4LjE2IDIyLjExTDEzOC4xNiAyMi4xMVExMzcuNTggMjIuMTEgMTM3LjE5IDIxLjcyUTEzNi43OSAyMS4zNCAxMzYuNzkgMjAuNzVaTTE0My4xMSAyMC45M0wxNDMuMTEgMjAuOTNMMTQ0LjQwIDE5LjQwUTE0NS4wNyAyMC4yNyAxNDUuODQgMjAuMjdMMTQ1Ljg0IDIwLjI3UTE0NS44NSAyMC4yNyAxNDUuODYgMjAuMjdMMTQ1Ljg2IDIwLjI3UTE0Ni4zNyAyMC4yNyAxNDYuNjQgMTkuOTZRMTQ2LjkxIDE5LjY1IDE0Ni45MSAxOS4wNUwxNDYuOTEgMTkuMDVMMTQ2LjkxIDE1LjQ0TDE0NC4wMSAxNS40NEwxNDQuMDEgMTMuNjBMMTQ5LjI3IDEzLjYwTDE0OS4yNyAxOC45MVExNDkuMjcgMjAuNTQgMTQ4LjQ0IDIxLjM2UTE0Ny42MiAyMi4xNyAxNDYuMDMgMjIuMTdMMTQ2LjAzIDIyLjE3UTE0NS4xMCAyMi4xNyAxNDQuMzQgMjEuODVRMTQzLjU5IDIxLjUzIDE0My4xMSAyMC45M1pNMTUzLjc3IDIxLjI0TDE1My43NyAyMS4yNEwxNTQuNTUgMTkuNDlRMTU1LjExIDE5Ljg2IDE1NS44NSAyMC4wOVExNTYuNjAgMjAuMzIgMTU3LjMyIDIwLjMyTDE1Ny4zMiAyMC4zMlExNTguNjggMjAuMzIgMTU4LjY5IDE5LjY0TDE1OC42OSAxOS42NFExNTguNjkgMTkuMjggMTU4LjMwIDE5LjExUTE1Ny45MSAxOC45MyAxNTcuMDQgMTguNzRMMTU3LjA0IDE4Ljc0UTE1Ni4wOSAxOC41MyAxNTUuNDYgMTguMzBRMTU0LjgyIDE4LjA2IDE1NC4zNyAxNy41NVExNTMuOTEgMTcuMDMgMTUzLjkxIDE2LjE2TDE1My45MSAxNi4xNlExNTMuOTEgMTUuMzkgMTU0LjMzIDE0Ljc3UTE1NC43NSAxNC4xNSAxNTUuNTkgMTMuNzlRMTU2LjQyIDEzLjQzIDE1Ny42MyAxMy40M0wxNTcuNjMgMTMuNDNRMTU4LjQ1IDEzLjQzIDE1OS4yNiAxMy42MlExNjAuMDcgMTMuODAgMTYwLjY4IDE0LjE3TDE2MC42OCAxNC4xN0wxNTkuOTUgMTUuOTNRMTU4Ljc1IDE1LjI4IDE1Ny42MiAxNS4yOEwxNTcuNjIgMTUuMjhRMTU2LjkxIDE1LjI4IDE1Ni41OCAxNS40OVExNTYuMjYgMTUuNzAgMTU2LjI2IDE2LjA0TDE1Ni4yNiAxNi4wNFExNTYuMjYgMTYuMzcgMTU2LjY1IDE2LjU0UTE1Ny4wMyAxNi43MSAxNTcuODggMTYuODlMMTU3Ljg4IDE2Ljg5UTE1OC44NCAxNy4xMCAxNTkuNDcgMTcuMzNRMTYwLjEwIDE3LjU2IDE2MC41NiAxOC4wN1ExNjEuMDMgMTguNTggMTYxLjAzIDE5LjQ2TDE2MS4wMyAxOS40NlExNjEuMDMgMjAuMjEgMTYwLjYxIDIwLjgzUTE2MC4xOSAyMS40NCAxNTkuMzUgMjEuODBRMTU4LjUxIDIyLjE3IDE1Ny4zMSAyMi4xN0wxNTcuMzEgMjIuMTdRMTU2LjI5IDIyLjE3IDE1NS4zMiAyMS45MlExNTQuMzYgMjEuNjcgMTUzLjc3IDIxLjI0WiIgZmlsbD0iI0ZGRkZGRiIgeD0iNzUuODUiLz48L3N2Zz4=)](https://forthebadge.com)
 # an analytic dashboard for SportSee with React
 # We need to have 
 - You need [Git](https://git-scm.com) to clone the repository
 - You need [Node](https://nodejs.org/en/) (v16.7.0) to run the npm commands
-## Available Scripts
 
-In the project directory, you can run:
+## Dependencies
+- [React](https://reactjs.org): v17.0.2  
+- [React-router-dom](https://reactrouter.com/web/guides/quick-start): v5.2.0  
+`$ npm install react-router-dom`
+- [Recharts](https://recharts.org/en-US): v2.1.8  
+`$ npm install recharts`
+- [Axios](https://github.com/axios/axios): v0.24.0  
+`$ npm install axios`  
+- [Prop-types](https://www.npmjs.com/package/prop-types): v15.7.2  
+`$ npm i prop-types`
+- Recommended text editor: [Visual Studio Code](https://code.visualstudio.com)
 
-### `npm start`
+## Back-End
+1. Clone the repository of SportSee back-end:   
+`git clone https://github.com/mintoug/AnissaMandhouj_12.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Inside this back-end repository, install dependencies:   
+`yarn`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Launch back-end on port 3000 (default port):   
+`yarn dev`
 
-### `npm test`
+## Front-End
+1. Clone the repository of SportSee front-end:   
+`git clone https://github.com/mintoug/AnissaMandhouj_12_11032021.git`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Inside this front-end repository, install dependencies:   
+`yarn`
 
-### `npm run build`
+3. Launch front-end on port 3001:   
+`yarn start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Front-end is now rendered at URL `http://localhost:3001`.
+5. URL availables :   
+`http://localhost:3001/user/12`   
+`http://localhost:3001/user/18`   
