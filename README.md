@@ -38,7 +38,7 @@
 `cd AnissaMandhouj_12_11032021`
 `yarn start`
 
-4. Front-end is now rendered at URL `http://localhost:3001`.
-5. URL availables :   
-`http://localhost:3001/user/12`   
-`http://localhost:3001/user/18`   
+4. Front-end is now rendered on port 3001
+5. endpoints availables :   
+`/user/12`   
+`/user/18`   
