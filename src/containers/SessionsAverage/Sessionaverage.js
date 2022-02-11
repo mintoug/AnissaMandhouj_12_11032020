@@ -1,4 +1,4 @@
-import ApiProvider from "../../services/ApiProvider";
+import ApiProvider from "../../services/API/ApiProvider";
 import Linechart from "../../components/AllCharts/LineChart/Linechart";
 import Loader from '../../components/Loader/Loader';
 import React, { Component } from "react";

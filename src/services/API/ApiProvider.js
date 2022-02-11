@@ -1,6 +1,5 @@
 import ApiFormatter from './ApiFormatter';
 import axios from 'axios';
-
 class ApiProvider {
     constructor() {
         this.baseUrl = 'http://localhost:3000';

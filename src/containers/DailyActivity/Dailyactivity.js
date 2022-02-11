@@ -1,7 +1,7 @@
-import ApiProvider from '../../services/ApiProvider';
+import ApiProvider from '../../services/API/ApiProvider';
 import Barchart from '../../components/AllCharts/BarChart/Barchart';
 import '../DailyActivity/Dailyactivity.css';
-
+import PropTypes from 'prop-types';
 
 import React, {Component} from 'react';
 
@@ -70,6 +70,9 @@ class DailyActivity extends Component {
     }
 }
 
+DailyActivity.propTypes = {
+    id : PropTypes.string.isRequired,
+}
 
 
 export default DailyActivity;

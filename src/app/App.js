@@ -1,7 +1,6 @@
-import '../app/App.css';
 import { BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
 import Dashboard from '../containers/DashBoard/Dashboard';
-import React, {Component, lazy, Suspense} from 'react';
+import React, {Component,  lazy, Suspense} from 'react';
 import {routes} from '../routes/routes';
 
 class App extends Component {
@@ -9,19 +8,19 @@ class App extends Component {
     const Loading = () => <h1>Loading...</h1>
 
     const component = (component) => {
-      return lazy(() => import(`../components/${component}/${component}`))
-    }
-
+         return lazy(() => import(`../components/${component}/${component}`))
+      }
+    
     return (
       <Suspense fallback={<Loading />}>
         <Router>
           <Switch>
             {routes.map((route, index) => {
               if (route.path !== '*') {
-                if (route.path === '/') {
+               if (route.path === '/') {
                   return (
                     <Route key={index} exact path={route.path} >
-                      <Redirect to="/dashboard/12" />
+                      < Redirect to="/user/12" />
                     </Route>
                   )
                 } else {
@@ -33,7 +32,8 @@ class App extends Component {
                     )}/>
                   )
                 }
-              } else {
+              }
+               else {
                 return <Route key={index} path={route.path} component={component(route.component)} />
               }
             })}

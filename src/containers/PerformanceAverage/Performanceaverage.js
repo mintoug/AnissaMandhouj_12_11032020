@@ -1,4 +1,4 @@
-import ApiProvider from '../../services/ApiProvider';
+import ApiProvider from '../../services/API/ApiProvider';
 import Radarchart from '../../components/AllCharts/RadarChart/Radarchart';
 import Loader from '../../components/Loader/Loader';
 import '../PerformanceAverage/Performanceaverage.css';

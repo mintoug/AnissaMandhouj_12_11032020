@@ -1,4 +1,4 @@
-import ApiProvider from '../../services/ApiProvider';
+import ApiProvider from '../../services/API/ApiProvider';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // ASSETS 
