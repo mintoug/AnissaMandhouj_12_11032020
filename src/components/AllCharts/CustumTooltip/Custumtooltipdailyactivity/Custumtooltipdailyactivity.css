@@ -2,8 +2,8 @@
     color: #fff;
     font-size: .8rem;
     font-weight: 700;
-    margin: 0;
-    padding: 1rem;
+    margin: 0 auto;
+    padding: 1rem .1rem;
 }
 
 .tooltipLine.black {

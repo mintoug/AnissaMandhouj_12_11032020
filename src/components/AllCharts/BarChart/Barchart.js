@@ -16,8 +16,8 @@ class Barchart extends Component {
                     left: 40,
                     bottom: 5,
                     }}
-                    barCategoryGap={35}
-                    barGap={8}
+                    barCategoryGap={24}
+                    barGap={5}
                 >
                     <CartesianGrid 
                         strokeDasharray="3 3" 
