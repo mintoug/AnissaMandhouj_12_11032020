@@ -35,8 +35,6 @@
 `yarn`
 
 3. Launch front-end on port 3001:   
-`cd AnissaMandhouj_12_11032021`
-
 `yarn start`
 
 4. Front-end is now rendered on port 3001
